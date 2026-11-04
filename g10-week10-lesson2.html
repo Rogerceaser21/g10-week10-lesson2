@@ -1566,11 +1566,11 @@ ul.plain li::before { color:var(--p-i-ink); }
   </div>
 </section>
 
-<section data-element="donow" class="slide g-well" data-timer="120" data-timer-group="dncheck" data-cfu="Why can the top view not show throttle up or down? || Draw a name with the Random Name Picker, hands stay down, three seconds of Wait Time, then reveal the answer. || From above you cannot see height. Height only shows from the side." data-notes="&lt;strong&gt;Do Now check, 2 minutes.&lt;/strong&gt; Reveal one at a time on NEXT and students fix their own answers on the back of the sheet. Do not add anything about calibration or drift: Part A&#x27;s Questions 1 to 3 ask that. &lt;span class=&#x27;tag cfu&#x27;&gt;CFU&lt;/span&gt; &lt;strong&gt;Answer: from above you cannot see height. Height only shows from the side.&lt;/strong&gt; Wait Time three seconds.">
+<section data-element="donow" class="slide g-well" data-timer="120" data-timer-group="dncheck" data-cfu="Why can the top view not show throttle up or down? || Draw a name with the Random Name Picker, hands stay down, three seconds of Wait Time, then reveal the answer. || From above you cannot see height. Height only shows from the side." data-chip-first data-notes="&lt;strong&gt;Do Now check, 2 minutes.&lt;/strong&gt; NEXT opens the CFU question first, before any answer shows. Then reveal the answers one at a time on NEXT and students fix their own answers on the back of the sheet. Do not add anything about calibration or drift: Part A&#x27;s Questions 1 to 3 ask that. &lt;span class=&#x27;tag cfu&#x27;&gt;CFU&lt;/span&gt; &lt;strong&gt;Answer: from above you cannot see height. Height only shows from the side.&lt;/strong&gt; Wait Time three seconds.">
   <div class="slide-content" style="max-width:min(97vw,2500px)">
     <p class="eyebrow reveal">// check &middot; do_now</p>
     <h2 class="reveal" style="margin-bottom:calc(var(--element-gap) * 0.4)">Heights and two views</h2>
-    <div class="grid" style="grid-template-columns:repeat(2, minmax(0,1fr)); gap:clamp(6px,0.9vw,14px)">
+    <div class="grid" style="grid-template-columns:minmax(0,1fr); max-width:47%; gap:clamp(6px,0.9vw,14px)">
       <div class="tblock j" data-fragment="1"><p class="lede" style="color:var(--p-j-ink)">1. Be specific</p><p style="margin-top:0.3em">The pilot needs to know exactly <b>how high</b> to fly and <b>when to hold still (hover)</b>, so the drone clears every gate and stays <b>1 metre below the ceiling</b>. A vague call means guessing.</p></div>
       <div class="tblock i" data-fragment="2"><p class="lede" style="color:var(--p-i-ink)">2 and 3. Which view?</p><p style="margin-top:0.3em"><b>Yaw: the top view.</b> A yaw is a spin on the spot, and you only see a turn from above. <b>Throttle up or down: the side view.</b> It shows height, so you see how high a gate is.</p></div>
     </div>    <p class="reveal" style="margin-top:calc(var(--element-gap) * 0.35); display:flex; flex-wrap:wrap; gap:0.6em; align-items:center"><span class="chip red">2 minutes</span></p>
@@ -2487,7 +2487,7 @@ ul.plain li::before { color:var(--p-i-ink); }
    The slides the teacher has hidden persist the same way, under their own version-keyed
    name, so a hide survives a refresh mid-lesson but never outlives a push.
    Everything else (font scale, teacher toggle, iSAMS state, timers) stays session-only. */
-const DECK_VERSION = 'v20261104-105739';
+const DECK_VERSION = 'v20261104-110826';
 
 /* ===========================================
    RUNTIME_STRIP: everything the boot code builds or writes at run time.
